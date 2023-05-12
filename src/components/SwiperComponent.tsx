@@ -13,6 +13,7 @@ export default function SwiperComponent() {
       modules={[Autoplay]}
       autoplay={{
         delay: 2500,
+        disableOnInteraction: false,
       }}
       spaceBetween={37}
       slidesPerView={1}
