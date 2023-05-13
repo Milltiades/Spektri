@@ -1,16 +1,25 @@
+import { useNavigate } from "react-router";
 import { styled } from "styled-components";
 
 export default function HeaderComponent() {
+  const navigate = useNavigate();
   return (
     <Header>
-      <Img src="/assets/SPEKTRI.svg" alt="" />
+      
+      <Li onClick={() => navigate('/')}> <Img src="/assets/SPEKTRI.svg" alt="" /></Li>
       <DivBtn>
-        <ButtonSign>Sign In</ButtonSign>
+        <ButtonSign onClick={() => navigate('/registration')}>Sign In</ButtonSign>
         <ButtonLog>Log In</ButtonLog>
       </DivBtn>
     </Header>
   );
 }
+
+const Li = styled.li`
+  list-style: none;
+  cursor: pointer;
+  width: 152px;
+`
 
 const Header = styled.div`
   width: 100%;

@@ -5,6 +5,8 @@ import FooterComponent from "./components/FooterComponent";
 import EventPage from "./components/EventPage";
 import HomePage from "./components/HomePage";
 import SignInPage from "./components/SignInPage";
+import UserPage from "./components/UserPage";
+import AddEventPage from "./components/AddEventPage";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/event" element={<EventPage />} />
         <Route path="/registration" element={<SignInPage/>}/>
+        <Route path="/user" element={<UserPage />} />
+        <Route path="/add-event" element={<AddEventPage />} />
       </Routes>
       <FooterComponent />
     </>

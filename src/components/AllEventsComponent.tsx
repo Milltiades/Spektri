@@ -6,8 +6,15 @@ export default function AllEventsComponent() {
   return (
     <Main>
       <Form>
-        <input type="date" />
-        Category
+       <Label htmlFor="" onClick={() => console.log('clicked')}> 
+       Choose a Date 
+       <img src="/assets/box.svg" alt="box" />
+       </Label>
+       <Label htmlFor="" onClick={() => console.log('clicked')}> 
+       Category 
+       <img src="/assets/box.svg" alt="box" />
+       </Label>
+        
         <Search type="text" placeholder="Search" />
       </Form>
       <Div>
@@ -27,6 +34,24 @@ export default function AllEventsComponent() {
     </Main>
   );
 }
+
+const Label = styled.label`
+  font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+display: flex;
+flex-direction: row;
+align-items: center;
+color: #555454;
+margin-top: 28px;
+cursor: pointer;
+& img {
+  margin-left: 15px;
+}
+`
+
+
 
 const Ul = styled.ul`
     list-style: none;

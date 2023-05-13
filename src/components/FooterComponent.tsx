@@ -23,6 +23,8 @@ const Footer = styled.div`
   justify-content: space-between;
   padding: 52px 19px;
   background: #D9D9D9;
+ 
+ 
 `;
 const Ul = styled.ul`
     display: flex;
