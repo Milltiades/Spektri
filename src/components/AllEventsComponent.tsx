@@ -55,6 +55,16 @@ cursor: pointer;
 
 const Ul = styled.ul`
     list-style: none;
+    
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 25px;
+    }
+    @media (min-width: 1200px) {
+      grid-template-columns: auto auto auto;
+      gap: 40px;
+    }
 `
 const Li = styled.li`
     cursor: pointer;
@@ -97,6 +107,10 @@ const Event = styled.div`
   height: 178px;
   background: #d9d9d9;
   border-radius: 8px;
+  /* @media (min-width: 768px){
+    width: 95%;
+  } */
+ 
 `;
 const H1 = styled.h1`
   font-style: normal;
