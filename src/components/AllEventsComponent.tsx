@@ -49,6 +49,9 @@ cursor: pointer;
 & img {
   margin-left: 15px;
 }
+@media (min-width: 768px) {
+  width: 50%;
+}
 `
 
 
@@ -85,6 +88,10 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   width: 100%;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 `;
 
 const Search = styled.input`

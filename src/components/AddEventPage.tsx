@@ -1,4 +1,4 @@
-import React from "react";
+
 import { styled } from "styled-components";
 
 export default function AddEventPage() {
@@ -26,6 +26,9 @@ const Main = styled.div`
   flex-direction: column;
   padding: 48px 28px;
   margin-bottom: 96px;
+   @media (min-width: 768px) {
+    padding: 79px 89px;
+  }
 `;
 
 const Input = styled.input`

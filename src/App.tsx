@@ -7,6 +7,7 @@ import HomePage from "./components/HomePage";
 import SignInPage from "./components/SignInPage";
 import UserPage from "./components/UserPage";
 import AddEventPage from "./components/AddEventPage";
+import LoginPage from "./components/LoginPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/event" element={<EventPage />} />
         <Route path="/registration" element={<SignInPage/>}/>
+        <Route path="login" element={<LoginPage/>} />
         <Route path="/user" element={<UserPage />} />
         <Route path="/add-event" element={<AddEventPage />} />
       </Routes>

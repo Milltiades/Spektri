@@ -1,23 +1,32 @@
-import React from "react";
 import { useNavigate } from "react-router";
 import { styled } from "styled-components";
 
 export default function UserPage() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <Main>
       <ButtonsDiv>
-        <Button onClick={() => navigate('/add-event')}>Add Event</Button>
+        <Button onClick={() => navigate("/add-event")}>Add Event</Button>
         <Button>Subscription</Button>
       </ButtonsDiv>
       <div>
         <h1>My Events</h1>
-        <Event>N/A</Event>
+        <Div>
+          <Event>N/A</Event>
+          
+        </Div>
       </div>
     </Main>
   );
 }
 
+const Div = styled.div`
+display: grid;
+@media (min-width: 768px) {
+  grid-template-columns: auto auto;
+  gap: 25px;
+}
+`;
 const ButtonsDiv = styled.div`
   display: flex;
   flex-direction: row;
@@ -36,6 +45,9 @@ const Button = styled.button`
   border: none;
   width: 50%;
   padding: 34px 0;
+  @media (min-width: 768px) {
+    height: 214px;
+  }
 `;
 
 const Main = styled.div`
@@ -53,4 +65,5 @@ const Event = styled.div`
   align-items: center;
   margin-top: 16px;
   margin-bottom: 100px;
+ 
 `;

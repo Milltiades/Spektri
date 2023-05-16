@@ -4,7 +4,7 @@ import { styled } from "styled-components";
 
 export default function SignInPage() {
   const navigate = useNavigate();
-  const { register, handleSubmit } = useForm();
+  const { handleSubmit } = useForm();
   const submitHandler = () => {
     navigate('/user')
   }
@@ -64,4 +64,7 @@ const Main = styled.div`
   background: #d9d9d9;
   border-radius: 8px;
   padding: 52px 28px;
+  @media (min-width: 768px) {
+    padding: 79px 89px;
+  }
 `;

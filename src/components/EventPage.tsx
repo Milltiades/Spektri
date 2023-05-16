@@ -60,6 +60,9 @@ const Event = styled.div`
   height: 178px;
   background: #d9d9d9;
   border-radius: 8px;
+  @media (min-width: 768px) {
+    height: 371px;
+  }
 `;
 
 const H1 = styled.h1`

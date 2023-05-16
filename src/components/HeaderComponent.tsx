@@ -9,7 +9,7 @@ export default function HeaderComponent() {
       <Li onClick={() => navigate('/')}> <Img src="/assets/SPEKTRI.svg" alt="" /></Li>
       <DivBtn>
         <ButtonSign onClick={() => navigate('/registration')}>Sign In</ButtonSign>
-        <ButtonLog>Log In</ButtonLog>
+        <ButtonLog onClick={() => navigate('/login')}>Log In</ButtonLog>
       </DivBtn>
     </Header>
   );
