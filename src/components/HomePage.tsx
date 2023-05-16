@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import styled  from "styled-components";
 import SwiperComponent from "./SwiperComponent";
 import HelloComponent from "./HelloComponent";
 import AllEventsComponent from "./AllEventsComponent";

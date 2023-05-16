@@ -1,5 +1,5 @@
 
-import { styled } from "styled-components";
+import  styled  from "styled-components";
 import data from "../../data.json";
 
 export default function AllEventsComponent() {
@@ -143,4 +143,7 @@ const Button = styled.button`
   border: none;
   width: calc(100% - 55px);
   margin-top: 16px;
+  @media (min-width: 768px) {
+width: 264px;
+  }
 `;
